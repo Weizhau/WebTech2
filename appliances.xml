@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+    <appliance>
+        <type>teapot</type>
+        <name>Xiaomi teapot pro</name>
+        <price>23.99</price>
+    </appliance>
+    <appliance>
+        <type>fridge</type>
+        <name>Samsung cooler</name>
+        <price>639.99</price>
+    </appliance>
+    <appliance>
+        <type>teapot</type>
+        <name>SomeCoolTeapot</name>
+        <price>13.99</price>
+    </appliance>
+</list>
