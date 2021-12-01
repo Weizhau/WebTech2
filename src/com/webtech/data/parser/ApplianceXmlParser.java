@@ -1,5 +1,6 @@
 package com.webtech.data.parser;
 
+import com.webtech.data.repository.IAppliancesRepository;
 import com.webtech.domain.model.Appliance;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -10,8 +11,19 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Xml parser for app-specific xml format
+ *
+ * @author Maksim Malenho
+ * @version 1.0
+ */
 public class ApplianceXmlParser {
 
+
+    /**
+     * @param uri uri
+     * @return {@link List<Appliance>} presented in xml-doc
+     */
     public List<Appliance> parseXml(String uri) {
         List<Appliance> applianceList = new LinkedList<>();
 
@@ -36,6 +48,10 @@ public class ApplianceXmlParser {
         return applianceList;
     }
 
+    /**
+     * @param node node
+     * @return {@link Appliance} presented in specific xml node
+     */
     private Appliance parseApplianceNode(Node node) {
         String type = "";
         String name = "";
